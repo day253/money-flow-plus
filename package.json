@@ -1,7 +1,7 @@
 {
-  "name": "money-flow-plus",
-  "displayName": "Money Flow Plus | Income Timer",
-  "description": "Track your income in real-time while coding! Motivate yourself by watching your earnings grow. | 让写代码充满动力，实时展示收入增长！",
+  "name": "value-flow-plus",
+  "displayName": "Value Flow Plus | Income Timer",
+  "description": "Track your value creation in real-time while coding! Visualize your earnings and stay motivated. | 让写代码充满动力，实时展示价值增长！",
   "version": "0.0.1",
   "publisher": "day253",
   "author": {
@@ -23,11 +23,11 @@
     "Visualization"
   ],
   "keywords": [
+    "value",
     "income",
     "earnings",
     "motivation",
-    "productivity",
-    "timer"
+    "productivity"
   ],
   "icon": "images/icon.png",
   "galleryBanner": {
@@ -40,19 +40,19 @@
   "main": "./extension.js",
   "contributes": {
     "configuration": {
-      "title": "Money Flow Plus",
+      "title": "Value Flow Plus",
       "properties": {
-        "dailyEarnings.monthlyIncome": {
+        "valueFlow.monthlyValue": {
           "type": "number",
           "default": 10000,
-          "description": "Your monthly income | 你的月收入"
+          "description": "Your monthly value creation | 你的月度价值"
         },
-        "dailyEarnings.workingDays": {
+        "valueFlow.workingDays": {
           "type": "number",
           "default": 22,
           "description": "Working days per month | 每月工作天数"
         },
-        "dailyEarnings.workingHours": {
+        "valueFlow.workingHours": {
           "type": "number",
           "default": 8,
           "description": "Working hours per day | 每天工作小时数"
