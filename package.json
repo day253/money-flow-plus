@@ -3,12 +3,37 @@
   "displayName": "💸 Money Flow Plus | 收入时钟",
   "description": "让你在写代码时感受金钱流入的快感！实时展示收入增长，激励你持续创造价值。| Watch your money flow while you code!",
   "version": "0.0.1",
+  "publisher": "day253",
+  "author": {
+    "name": "day253"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/day253/money-flow-plus"
+  },
+  "bugs": {
+    "url": "https://github.com/day253/money-flow-plus/issues"
+  },
+  "homepage": "https://github.com/day253/money-flow-plus#readme",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Visualization"
   ],
+  "keywords": [
+    "money",
+    "income",
+    "earnings",
+    "motivation",
+    "productivity"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#FFD700",
+    "theme": "dark"
+  },
   "activationEvents": [
     "onStartupFinished"
   ],
@@ -47,12 +72,5 @@
     "@types/vscode": "^1.85.0",
     "eslint": "^8.54.0"
   },
-  "publisher": "your-publisher-name",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "dependencies": {
-    "vscode": "^1.1.37"
-  }
+  "license": "MIT"
 } 
