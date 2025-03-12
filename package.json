@@ -1,0 +1,58 @@
+{
+  "name": "money-flow-plus",
+  "displayName": "💸 Money Flow Plus | 收入时钟",
+  "description": "让你在写代码时感受金钱流入的快感！实时展示收入增长，激励你持续创造价值。| Watch your money flow while you code!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Daily Earnings",
+      "properties": {
+        "dailyEarnings.monthlyIncome": {
+          "type": "number",
+          "default": 1000000,
+          "description": "你的月收入"
+        },
+        "dailyEarnings.workingDays": {
+          "type": "number",
+          "default": 22,
+          "description": "每月工作天数"
+        },
+        "dailyEarnings.workingHours": {
+          "type": "number",
+          "default": 8,
+          "description": "每天工作小时数"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "vscode:prepublish": "npm run compile",
+    "watch": "tsc -watch -p ./",
+    "compile": "echo Compilation not needed"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "eslint": "^8.54.0"
+  },
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "vscode": "^1.1.37"
+  }
+} 
